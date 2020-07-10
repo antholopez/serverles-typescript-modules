@@ -4,7 +4,7 @@ import { AuthenticationService } from '../service/auth';
 
 export class AuthenticationController extends AuthenticationService {
 
-  async create (event: any, context?: Context) {
+  async create (context?: Context) {
     console.log('functionName', context.functionName);
 
     try {

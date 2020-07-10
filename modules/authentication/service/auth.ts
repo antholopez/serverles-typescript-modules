@@ -8,7 +8,7 @@ export class AuthenticationService {
         data: 'Hola Mundo :3'
       };
       const database = await db.connect()
-      console.log(database)
+      if (database) console.log('Connection db OK.')
       return result;
     } catch (err) {
       console.error(err);
